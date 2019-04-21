@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <h1 class="display-4"><strong>Crystal Collector!</strong></h1>
+        <p class="lead">Click on any crystal to begin</p>
+        <hr class="my-4">
+        <p><strong><u>HOW TO PLAY</u></strong></p>
+        <p>
+            <li>You will be given a random number at the start of the game</li>
+            <li>There are four cyrstals each containing a specific value</li>
+            <li>By clicking on a crystal, you add points to your total score</li>
+            <li>For every new round the value of each cystal changes</li>
+            <li>You <u>win</u> by matching your total score to the one provided</li>
+            <li>You <u>lose</u> by exceeding the number given</li>
+
+        </p>
+    </div>
+
+    <div class="content">
+
+        <div class="numberToMatch">
+            <h2>Match this number:
+                <span id="randomNumber"></span>
+            </h2>
+        </div>
+
+        <div class="winsAndLosses">
+            <h2>Wins:
+                <span id="numberWins"></span>
+                <br>
+                Losses:
+                <span id="numberLosses"></span>
+            </h2>
+        </div>
+
+        <div class="gems">
+            <img src="assets/images/blue.jpeg" class=gemImage id="one" alt="Blue Crystal" height="120" width="120">
+            <img src="assets/images/brown.jpeg" class=gemImage id="two" alt="Brown Crystal" height="120" width="120">
+            <img src="assets/images/pink.jpeg" class=gemImage id="three" alt="Pink Crystal" height="120" width="120">
+            <img src="assets/images/green.jpeg" class=gemImage id="four" alt="Green Crystal" height="120" width="120">
+        </div>
+
+        <div class="userTotal">
+            <h2>Your total score is:
+                <span id="finalTotal"></span>
+            </h2>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
